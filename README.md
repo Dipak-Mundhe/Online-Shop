@@ -31,7 +31,7 @@ A modern e-commerce frontend built with **React** and **Vite**, featuring produc
 ---
 
 ## 📂 Project Structure
-
+```bash
 Online-Shop/
 ├─ src/
 │ ├─ components/ # Reusable UI components (Header, Footer, ProductCard, CartItem, WishlistItem, etc.)
@@ -42,7 +42,7 @@ Online-Shop/
 │ └─ main.jsx # App entry
 ├─ public/ # Static assets
 └─ package.json
-
+```
 
 ---
 
