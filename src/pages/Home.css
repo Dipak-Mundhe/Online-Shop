@@ -1,0 +1,239 @@
+.home {
+  color: #3a3226;
+  font-family: 'Poppins', Arial, sans-serif; /* more modern font */
+  overflow-x: hidden;
+}
+
+/* ---------------- BANNER ---------------- */
+.banner {
+  background: #fff4e6;
+  padding: 80px 20px;
+  border-bottom: 1px solid #e0d5c0;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.banner h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  animation: slideDown 1s ease;
+}
+
+.banner p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.btn-accent,
+.btn-primary {
+  background-color: #d4a76a;
+  color: #3a3226;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+.btn-accent:hover,
+.btn-primary:hover {
+  background-color: #e8c99d;
+  transform: scale(1.05);
+}
+
+/* ---------------- CATEGORIES ---------------- */
+.categories {
+  padding: 60px 20px;
+  animation: fadeInUp 1s ease;
+}
+
+.category-card {
+  border: 1px solid #e0d5c0;
+  padding: 25px 15px;
+  margin: 12px;
+  background: #fff;
+  cursor: pointer;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: all 0.4s ease;
+  text-transform: capitalize;
+}
+
+.category-card:hover {
+  background: #e8c99d;
+  transform: translateY(-6px) scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------------- FEATURED ---------------- */
+.featured {
+  background: #fafafa;
+  padding: 60px 20px;
+}
+
+.product-card {
+  border: 1px solid #e0d5c0;
+  padding: 20px;
+  margin: 10px;
+  background: #fff;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInUp 1s ease;
+}
+
+.product-card img {
+  border-radius: 8px;
+  max-height: 180px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.product-card:hover img {
+  transform: scale(1.08);
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.product-card h3 {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* ---------------- TRENDING ---------------- */
+.trending {
+  padding: 60px 20px;
+}
+
+.trending h2 {
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.trending .product-card {
+  border-radius: 12px;
+  padding: 15px;
+  transition: all 0.3s ease;
+}
+
+.trending .product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------------- FOOTER ---------------- */
+footer {
+  background: #fff4e6;
+  padding: 20px;
+  font-size: 0.9rem;
+  border-top: 1px solid #e0d5c0;
+}
+
+/* ---------------- ANIMATIONS ---------------- */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Remove default link styles */
+.no-link-style {
+  text-decoration: none;
+  color: inherit; /* inherit parent text color */
+}
+
+.no-link-style:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/* ---------------- DARK MODE ---------------- */
+body.dark .home {
+  color: #F0E6D2;
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
+body.dark h2 {
+  color: #D4A76A; 
+}
+
+body.dark .banner {
+  background: #1A1A1A;
+  padding: 80px 20px;
+  border-bottom: 1px solid #3D3D3D;
+}
+
+body.dark .banner h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  color: #F0E6D2;
+}
+
+body.dark .banner p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  color: #A0A0A0;
+}
+
+body.dark .btn-accent,
+body.dark .btn-primary {
+  background-color: #D4A76A;
+  color: #1A1A1A;
+}
+
+body.dark .btn-accent:hover,
+body.dark .btn-primary:hover {
+  background-color: #E8C99D;
+  color: #1A1A1A;
+  transform: scale(1.05);
+}
+
+body.dark .category-card {
+  border: 1px solid #3D3D3D;
+  background: #1A1A1A;
+  color: #F0E6D2;
+  border-radius: 12px;
+  transition: all 0.4s ease;
+}
+
+body.dark .category-card:hover {
+  background: #3D3D3D;
+  transform: translateY(-6px) scale(1.05);
+}
+
+body.dark .featured {
+  background: #1A1A1A;
+}
+
+body.dark .product-card {
+  border: 1px solid #3D3D3D;
+  background: #1A1A1A;
+  color: #F0E6D2;
+}
+
+body.dark .product-card:hover {
+  box-shadow: 0 6px 16px rgba(255, 255, 255, 0.1);
+}
+
+body.dark footer {
+  background: #1A1A1A;
+  border-top: 1px solid #3D3D3D;
+  color: #A0A0A0;
+}
